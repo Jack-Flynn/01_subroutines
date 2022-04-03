@@ -21,4 +21,15 @@ def int_check(question):
     return response
 
 
+def check_input(question):
+    while True:
+        response = input(question)
+        if response.isdigit():
+            print("don't enter a number")
+        else:
+            print("nice name")
+            break
+
+
+check_input("What's your name?")
 int_check("How old are you?")
